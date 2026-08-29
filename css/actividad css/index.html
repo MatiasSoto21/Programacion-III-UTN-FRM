@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1 - Introducción a CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Trabajo Práctico 1 - Introducción a CSS</h1>
+        <p>
+            CSS (Cascading Style Sheets) es un lenguaje utilizado para darle estilo y presentación a una página HTML.
+            Permite modificar colores, tamaños, fuentes, márgenes, posiciones y el diseño general del sitio,
+            separando la estructura (HTML) de la apariencia visual.
+        </p>
+    </header>
+
+    <hr>
+
+    <section>
+        <h2>2. Selectores en CSS</h2>
+
+        <p id="parrafo-id">
+            Este párrafo utiliza un selector por ID.
+        </p>
+
+        <p class="parrafo-clase">
+            Este párrafo utiliza un selector por CLASS.
+        </p>
+
+        <p>
+            Este párrafo utiliza un selector por TAG (etiqueta p).
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2 class="titulo-sombra">3. Modificación de Texto</h2>
+
+        <p class="texto-modificado">
+            Este párrafo tiene un interlineado amplio y un espaciado entre letras para mostrar el efecto de las propiedades line-height y letter-spacing.
+        </p>
+
+        <blockquote class="cita">
+            "El diseño no es solo cómo se ve o cómo se siente. El diseño es cómo funciona." – Steve Jobs.
+        </blockquote>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>4. Modelo de Caja - Tarjeta de Perfil</h2>
+
+        <div class="tarjeta">
+            <div class="cuadrado"></div>
+            <h3>Matías Soto</h3>
+            <p>
+                Estudiante de la Tecnicatura Universitaria en Programación.
+                Esta tarjeta demuestra el uso de borde, padding, margin,
+                border-radius, background-color y box-shadow.
+            </p>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>5. Display y Visibility</h2>
+
+        <h3>Display: block</h3>
+        <div class="contenedor-block">
+            <div class="tarjeta-mini">Tarjeta 1</div>
+            <div class="tarjeta-mini">Tarjeta 2</div>
+            <div class="tarjeta-mini">Tarjeta 3</div>
+        </div>
+
+        <h3>Display: inline</h3>
+        <div class="contenedor-inline">
+            <span class="inline-item">Tarjeta 1</span>
+            <span class="inline-item">Tarjeta 2</span>
+            <span class="inline-item">Tarjeta 3</span>
+        </div>
+
+        <h3>Display: inline-block</h3>
+        <div class="contenedor-inlineblock">
+            <div class="inline-block-item">Tarjeta 1</div>
+            <div class="inline-block-item">Tarjeta 2</div>
+            <div class="inline-block-item">Tarjeta 3</div>
+        </div>
+
+        <h3>Display y Visibility</h3>
+
+        <button class="boton-none">Botón con display:none</button>
+        <button class="boton-hidden">Botón con visibility:hidden</button>
+
+        <blockquote>
+            <strong>Diferencia:</strong>
+            <br><br>
+            <b>display: none;</b> elimina completamente el elemento de la página y no ocupa espacio.
+            <br>
+            <b>visibility: hidden;</b> oculta el elemento, pero mantiene el espacio que ocupa dentro del diseño.
+        </blockquote>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>6. Variables CSS - Tema de Colores</h2>
+
+        <div class="tarjeta-tema">
+            <h3>Tarjeta con Variables CSS</h3>
+            <p>
+                Esta tarjeta utiliza variables definidas en <code>:root</code> para el color de fondo, texto y borde.
+                Cambiando las variables se modifica el tema completo de forma rápida.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

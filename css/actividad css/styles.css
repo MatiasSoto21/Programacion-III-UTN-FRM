@@ -1,0 +1,151 @@
+/* ================================
+   VARIABLES CSS - TEMA DE COLORES
+================================ */
+:root {
+    --color-fondo: #eaf4fc;
+    --color-texto: #1f2937;
+    --color-acento: #2563eb;
+}
+
+/* ================================
+   ESTILOS GENERALES
+================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #1e8bf1;
+}
+
+/* Selector por TAG */
+p {
+    color: #444;
+}
+
+/* ================================
+   SELECTORES
+================================ */
+
+/* Selector por ID */
+#parrafo-id {
+    color: red;
+    font-weight: bold;
+}
+
+/* Selector por CLASS */
+.parrafo-clase {
+    color: blue;
+    background-color: #dbeafe;
+    padding: 10px;
+}
+
+/* ================================
+   MODIFICACIÓN DE TEXTO
+================================ */
+.titulo-sombra {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.texto-modificado {
+    line-height: 2;
+    letter-spacing: 3px;
+}
+
+.cita {
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: darkslategray;
+    background-color: #eeeeee;
+    padding: 15px;
+    border-left: 5px solid steelblue;
+}
+
+/* ================================
+   MODELO DE CAJA
+================================ */
+.tarjeta {
+    width: 300px;
+    background-color: white;
+    border: 2px solid steelblue;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.cuadrado {
+    width: 80px;
+    height: 80px;
+    background-color: steelblue;
+    margin-bottom: 15px;
+}
+
+/*
+box-sizing: content-box;
+Calcula el ancho y alto únicamente sobre el contenido.
+El padding y el borde aumentan el tamaño total del elemento.
+
+box-sizing: border-box;
+Incluye contenido, padding y borde dentro del ancho y alto definidos,
+facilitando el diseño de las cajas.
+*/
+
+/* ================================
+   DISPLAY
+================================ */
+.tarjeta-mini,
+.inline-block-item {
+    width: 120px;
+    height: 80px;
+    background-color: lightblue;
+    border: 2px solid steelblue;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* BLOCK */
+.tarjeta-mini {
+    display: block;
+}
+
+/* INLINE */
+.inline-item {
+    display: inline;
+    background-color: lightgreen;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* INLINE-BLOCK */
+.inline-block-item {
+    display: inline-block;
+}
+
+/* ================================
+   VISIBILITY
+================================ */
+.boton-none {
+    display: none;
+}
+
+.boton-hidden {
+    visibility: hidden;
+}
+
+/* ================================
+   TARJETA CON VARIABLES CSS
+================================ */
+.tarjeta-tema {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border: 3px solid var(--color-acento);
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+}
