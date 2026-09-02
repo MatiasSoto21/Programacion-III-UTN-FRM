@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpsons API - TypeScript</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Los Simpsons API</h1>
+        <p>Frases y personajes de la serie utilizando TypeScript.</p>
+    </header>
+
+    <section class="controls">
+        <button id="loadBtn">Cargar Personajes</button>
+    </section>
+
+    <section id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Cargando personajes...</p>
+    </section>
+
+    <div id="error" class="error hidden"></div>
+
+    <section id="characters" class="characters-container"></section>
+
+    <footer>
+        <p>
+            API utilizada:
+            <a href="https://thesimpsonsapi.com/api/characters" target="_blank">
+                The Simpsons API
+            </a>
+        </p>
+    </footer>
+
+    <script type="module" src="./dist/main.js"></script>
+</body>
+</html>
