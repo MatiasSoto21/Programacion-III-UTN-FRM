@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+             https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
+             version="3.2">
+
+    <persistence-unit name="FacturacionPU" transaction-type="RESOURCE_LOCAL">
+
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+
+        <class>entities.Articulo</class>
+        <class>entities.AuditoriaApp</class>
+        <class>entities.Cliente</class>
+        <class>entities.CondicionIva</class>
+        <class>entities.Contacto</class>
+        <class>entities.Domicilio</class>
+        <class>entities.EntityId</class>
+        <class>entities.FacturaVenta</class>
+        <class>entities.FacturaVentaDetalle</class>
+        <class>entities.ListaPrecio</class>
+        <class>entities.ListaPrecioArticulo</class>
+        <class>entities.Marca</class>
+        <class>entities.PuntoVenta</class>
+        <class>entities.Rubro</class>
+        <class>entities.TipoMoneda</class>
+        <class>entities.Usuario</class>
+
+
+        <properties>
+
+            <!-- CONEXIÓN POSTGRESQL -->
+            <property name="jakarta.persistence.jdbc.driver"
+                      value="org.postgresql.Driver"/>
+
+            <property name="jakarta.persistence.jdbc.url"
+                      value="jdbc:postgresql://localhost:5432/TP_GRUPAL_ORM"/>
+
+            <property name="jakarta.persistence.jdbc.user"
+                      value="postgres"/>
+
+            <property name="jakarta.persistence.jdbc.password"
+                      value="002912"/>
+
+
+            <!-- HIBERNATE -->
+
+            <property name="hibernate.dialect"
+                      value="org.hibernate.dialect.PostgreSQLDialect"/>
+
+            <!-- Mostrar SQL por consola -->
+            <property name="hibernate.show_sql"
+                      value="false"/>
+
+            <property name="hibernate.format_sql"
+                      value="false"/>
+
+            <!-- Crear/actualizar las tablas automáticamente -->
+            <property name="hibernate.hbm2ddl.auto"
+                      value="update"/>
+
+            <property name="hibernate.hbm2ddl.create_namespaces" value="true"/>
+
+        </properties>
+
+    </persistence-unit>
+
+</persistence>
