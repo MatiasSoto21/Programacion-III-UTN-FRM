@@ -40,7 +40,7 @@
                       value="postgres"/>
 
             <property name="jakarta.persistence.jdbc.password"
-                      value="002912"/>
+                      value="123"/>
 
 
             <!-- HIBERNATE -->
